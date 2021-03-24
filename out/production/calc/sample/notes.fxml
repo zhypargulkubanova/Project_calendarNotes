@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="515.0" prefWidth="688.0" spacing="15" style="-fx-background-color: #DCB0FF; -fx-border-insets: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NotesController">
+
+    <padding>
+        <Insets topRightBottomLeft="15" />
+    </padding>
+   <MenuBar prefHeight="43.0" prefWidth="665.0">
+     <menus>
+       <Menu mnemonicParsing="false" text="Help">
+         <items>
+           <MenuItem mnemonicParsing="false" onAction="#onAbout" text="About" />
+         </items>
+       </Menu>
+         <Menu mnemonicParsing="false" text="University">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onInformation" text="Information" />
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="File">
+           <items>
+             <MenuItem mnemonicParsing="false" onAction="#onSave" text="Save" />
+           </items>
+         </Menu>
+     </menus>
+   </MenuBar>
+   <VBox prefHeight="104.0" prefWidth="670.0" />
+
+    <DatePicker fx:id="picker" style="-fx-background-color: #FACCFF; -fx-border-color: #FACCFF; visibility: #FACCFF; -fx-max-height: #FACCFF;" />
+
+    <TextArea fx:id="notes" prefHeight="402.0" prefWidth="658.0" style="-fx-background-color: #FEFEDF;">
+      <font>
+         <Font name="System Italic" size="12.0" />
+      </font></TextArea>
+
+          <Button onAction="#updateNotes" prefHeight="50.0" prefWidth="179.0" style="-fx-background-color: #FF6F91;" text="Save" textFill="WHITE">
+      <font>
+         <Font name="System Bold Italic" size="23.0" />
+      </font>
+   </Button>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+
+</VBox>
