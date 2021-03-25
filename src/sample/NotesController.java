@@ -62,8 +62,7 @@ public class NotesController {
         fileChooser.setInitialFileName("Note");
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("TXT File", "*.txt"));
         System.out.println("SAVED!!!!!");
-        //fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("JPEG File", "*.jpg"));
-
+        
     }
 
     private void load() {
